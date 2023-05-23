@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+h1, p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+label {
+    display: block;
+}
+
+.modal .modal-dialog {
+  width: 380px;
+  transition: bottom .75s ease-in-out;
+  font-family: 'Wix Madefor Display', sans-serif;
+}
+
+
+.modal-dialog {
+  max-width: var(--bs-modal-width);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hello-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: white;
+    border-radius: 15px;
+    border-color: #333;
+    border-style: solid;
+    border-width: 3px
+
+}
+
+.modal-header {
+    margin: 1rem;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--bs-modal-header-padding);
+}
+
+.modal-body {
+    margin: 1.75rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.button {
+    display: inline-block; /* Строчно-блочный элемент */
+    padding: 20px 30px; /* Поля вокруг текста  */
+    background-color: #0d6efd;
+    border-color: #0a58ca;
+    color: #fff;
+    text-align: center;
+    text-decoration: none; /* Убираем подчёркивание */
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 15px; /* Скругляем уголки */
+}
+
+.nav-item {
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em
+}
+
+h2, h3 {
+font-family: 'Montserrat', sans-serif;}
+
+.nameinput {
+  border: 0;
+  border-bottom: 1px solid #000;
+  background-color: rgba(0,0,0,0);
+  outline: 0;
+}
+
+.survey {
+font-family: 'Montserrat', sans-serif;}
+}
+
+.btn {
+    display: inline-block; /* Строчно-блочный элемент */
+    padding: 20px 30px; /* Поля вокруг текста  */
+    background-color: #0d6efd;
+    border-color: #0a58ca;
+    color: #fff;
+    text-align: center;
+    text-decoration: none; /* Убираем подчёркивание */
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 15px; /* Скругляем уголки */
+}
+
+.thx {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}

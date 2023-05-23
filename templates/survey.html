@@ -1,0 +1,270 @@
+<!-- survey.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iQuest</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+<div class="survey">
+    <h1>Анкета</h1>
+    <form method="post" action="{{ url_for('survey') }}">
+
+        <label for="name">Введите своё имя:</label>
+        <div><input type="text" id="name" class="nameinput" name="name" required></div>
+
+        <h2>iQuest 1</h2>
+        <h3>Насколько сложно ориентироваться на нашем веб-сайте?</h3>
+        <label>
+            <input type="radio" name="question_1" value="Очень просто"> Очень просто
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_1" value="Скорее просто"> Скорее просто
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_1" value="Нормально"> Нормально
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_1" value="Скорее сложно"> Скорее сложно
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_1" value="Очень сложно"> Очень сложно
+        </label>
+
+
+
+        <h2>iQuest 2</h2>
+        <h3>Насколько сложно найти на нашем веб-сайте нужную информацию?</h3>
+        <label>
+            <input type="radio" name="question_2" value="Очень просто"> Очень просто
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_2" value="Скорее просто"> Скорее просто
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_2" value="Нормально"> Нормально
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_2" value="Скорее сложно"> Скорее сложно
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_2" value="Очень сложно"> Очень сложно
+        </label>
+
+
+
+        <h2>iQuest 3</h2>
+        <h3>В какой степени является информация на нашем веб-сайте понятной?</h3>
+        <label>
+            <input type="radio" name="question_3" value="Полностью понятна"> Полностью понятна
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_3" value="Понятна"> Понятна
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_3" value="Скорее понятна"> Скорее понятна
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_3" value="Скорее непонятна"> Скорее непонятна
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_3" value="Непонятна"> Непонятна
+        </label>
+
+
+
+        <h2>iQuest 4</h2>
+        <h3>Как Вы оцениваете внешний вид нашего веб-сайта?</h3>
+        <label>
+            <input type="radio" name="question_4" value="Очень хороший"> Очень хороший
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_4" value="Хороший"> Хороший
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_4" value="Нормальный"> Нормальный
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_4" value="Плохой"> Плохой
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_4" value="Мне он совсем не нравится"> Мне он совсем не нравится
+        </label>
+
+
+
+        <h2>iQuest 5</h2>
+        <h3>Как Вы оцениваете актуальность содержания на нашем веб-сайте?</h3>
+        <label>
+            <input type="radio" name="question_5" value="Актуальное"> Актуальное
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_5" value="Скорее актуальное"> Скорее актуальное
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_5" value="Не слишком актуальное"> Не слишком актуальное
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_5" value="Совсем не актуальное"> Совсем не актуальное
+        </label>
+        <br>
+
+
+
+        <h2>iQuest 6</h2>
+        <h3>Насколько сложно, по Вашему мнению, скачивание файлов с нашего веб-сайта?</h3>
+        <label>
+            <input type="radio" name="question_6" value="Очень просто"> Очень просто
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_6" value="Скорее просто"> Скорее просто
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_6" value="Нормально"> Нормально
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_6" value="Скорее сложно"> Скорее сложно
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_6" value="Очень сложно"> Очень сложно
+        </label>
+
+
+
+        <h2>iQuest 7</h2>
+        <h3>Насколько сложным было осуществление онлайн-заказа на нашем веб-сайте?</h3>
+        <label>
+            <input type="radio" name="question_7" value="Очень просто"> Очень просто
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_7" value="Скорее просто"> Скорее просто
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_7" value="Нормально"> Нормально
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_7" value="Скорее сложно"> Скорее сложно
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_7" value="Очень сложно"> Очень сложно
+        </label>
+
+
+
+        <h2>iQuest 8</h2>
+        <h3>Насколько Вы доверяете процессу онлайн-заказов на нашем веб-сайте?</h3>
+        <label>
+            <input type="radio" name="question_8" value="Безусловно"> Безусловно
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_8" value="Очень"> Очень
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_8" value="Нормально"> Нормально
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_8" value="Я не считаю его слишком надежным"> Я не считаю его слишком надежным
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_8" value="Я совсем не доверяю ему"> Я совсем не доверяю ему
+        </label>
+
+
+
+        <h2>iQuest 9</h2>
+        <h3>Насколько Вы в общем довольны нашим веб-сайтом?</h3>
+        <label>
+            <input type="radio" name="question_9" value="Очень доволен/льна"> Очень доволен/льна
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_9" value="Доволен/льна"> Доволен/льна
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_9" value="Скорее доволен/льна"> Скорее доволен/льна
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_9" value="В среднем доволен/льна"> В среднем доволен/льна
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_9" value="Скорее недоволен/льна"> Скорее недоволен/льна
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_9" value="Недоволен/льна"> Недоволен/льна
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_9" value="Очень недоволен/льна"> Очень недоволен/льна
+        </label>
+
+
+
+        <h2>iQuest 10</h2>
+        <h3>Вы бы рекомендовали наш веб-сайт другим людям?</h3>
+        <label>
+            <input type="radio" name="question_10" value="Несомненно да"> Несомненно да
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_10" value="Вероятно да"> Вероятно да
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_10" value="Я не знаю"> Я не знаю
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_10" value="Вероятно нет"> Вероятно нет
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="question_10" value="Несомненно нет"> Несомненно нет
+        </label>
+
+
+
+        <input type="submit" class="btn" value="Отправить">
+
+
+
+    </form>
+</div>
+</body>
+
+</html>

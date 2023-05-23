@@ -1,0 +1,37 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iQuest</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Wix+Madefor+Display:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <h1>Добро пожаловать на наш сайт!</h1>
+
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="hello-block">
+                <div class="hello-block__header">
+                    <div class="modal-header">
+                        <h1 class="modal-title">iQuest</h1>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p>С моей помощью, ты легко проведешь так необходимое тебе анкетирование. Можешь приступать в любое время, я готов всегда! В качестве примера на этой странице есть анкета по оценке N-го веб-сайта. Естественно, оценку проходят именно посетители сайта.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="{{ url_for('survey') }}" class="button">Пройти анкету</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
